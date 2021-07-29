@@ -11,13 +11,13 @@ const paintColors = getPaintColors()
 //     }
 // )
 
-export const TechnologyPackages = () => {
+export const PaintColorChoices = () => {
     let html = "<ul>"
 
     // Use .map() for converting objects to <li> elements
-    const listItems = techPackages.map(techPackage => {
+    const listItems = paintColors.map(paintColor => {
         return `<li>
-            <input type="radio" name="wheel" value="${techPackage.id}" /> ${techPackage.package}
+            <input type="radio" name="paint" value="${paintColor.id}" /> ${paintColor.name}
         </li>`
     })
 
