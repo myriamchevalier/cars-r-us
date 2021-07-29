@@ -37,22 +37,26 @@ const database = {
             price: 3000
         }
     ],
-    technologies : [
+    techPackages : [
         {
             id: 1,
             package: "Basic Package",
+            description: "basic sound system",
             price: 0
         }, {
             id: 2,
             package: "Navigation Package",
+            description: "includes integrated navigation controls",
             price: 500
         }, {
             id: 3,
             package: "Visibility Package",
+            description: "includes side and rear cameras",
             price: 2000
         }, {
             id: 4,
             package: "Ultra Package",
+            description: "includes navigation and visibility packages",
             price: 2250
         }
     ],
@@ -95,8 +99,8 @@ export const getInteriors = () => {
     return database.interiors.map(interior => ({...interior}))
 }
 
-export const getTechnologies = () => {
-    return database.technologies.map(technology => ({...technology}))
+export const getTechPackages = () => {
+    return database.techPackages.map(techPackage => ({...techPackage}))
 }
 
 export const getWheels = () => {
