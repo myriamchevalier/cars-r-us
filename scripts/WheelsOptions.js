@@ -2,14 +2,14 @@ import { getWheels } from "./database.js"
 
 const wheels = getWheels()
 
-// document.addEventListener(
-//     "change",
-//     (event) => {
-//         if (event.target.name === "size") {
-//             setSize(parseInt(event.target.value))
-//         }
-//     }
-// )
+document.addEventListener(
+    "change",
+    (event) => {
+        if (event.target.name === "wheel") {
+           window.alert(`User chose wheels option ${event.target.value}`)
+        }
+    }
+)
 
 export const WheelsOptions = () => {
     let html = "<ul>"

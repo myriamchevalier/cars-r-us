@@ -2,15 +2,14 @@ import { getPaintColors } from "./database.js"
 
 const paintColors = getPaintColors()
 
-// document.addEventListener(
-//     "change",
-//     (event) => {
-//         if (event.target.name === "size") {
-//             setSize(parseInt(event.target.value))
-//         }
-//     }
-// )
-
+document.addEventListener(
+    "change",
+    (event) => {
+        if (event.target.name === "paint") {
+           window.alert(`User chose paint color option ${event.target.value}`)
+        }
+    }
+)
 export const PaintColorChoices = () => {
     let html = "<ul>"
 
