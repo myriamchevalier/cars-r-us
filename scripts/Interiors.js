@@ -2,14 +2,14 @@ import { getInteriors } from "./database.js"
 
 const interiors = getInteriors()
 
-// document.addEventListener(
-//     "change",
-//     (event) => {
-//         if (event.target.name === "size") {
-//             setSize(parseInt(event.target.value))
-//         }
-//     }
-// )
+document.addEventListener(
+    "change",
+    (event) => {
+        if (event.target.name === "interior") {
+           window.alert(`User chose interior material ${event.target.value}`)
+        }
+    }
+)
 
 export const InteriorMaterials = () => {
     let html = "<ul>"
