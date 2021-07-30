@@ -2,14 +2,14 @@ import { getTechPackages } from "./database.js"
 
 const techPackages = getTechPackages()
 
-// document.addEventListener(
-//     "change",
-//     (event) => {
-//         if (event.target.name === "size") {
-//             setSize(parseInt(event.target.value))
-//         }
-//     }
-// )
+document.addEventListener(
+    "change",
+    (event) => {
+        if (event.target.name === "technology") {
+           window.alert(`User chose technology package ${event.target.value}`)
+        }
+    }
+)
 
 export const TechnologyPackages = () => {
     let html = "<ul>"
