@@ -84,11 +84,27 @@ const database = {
             id: 1,
             paintColorId: 3,
             interiorId: 1,
-            technologyId: 4,
+            techPackageId: 4,
             wheelsId: 1,
             basePrice: 5000
         }
-    ]
+    ],
+    carBuilder :{}
+}
+
+export const setPaintColors = (id) => {
+    return database.carBuilder.paintColorId = id
+}
+
+export const setInteriors = (id) => {
+    return database.carBuilder.interiorId = id
+}
+
+export const setTechPackages = (id) => {
+    return database.carBuilder.techPackageId = id
+}
+export const setWheels = (id) => {
+    return database.carBuilder.wheelsId = id
 }
 
 export const getPaintColors = () => {
