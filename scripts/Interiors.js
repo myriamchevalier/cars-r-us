@@ -17,7 +17,7 @@ export const InteriorMaterials = () => {
     // Use .map() for converting objects to <li> elements
     const listItems = interiors.map(interior => {
         return `<li>
-            <input type="radio" name="wheel" value="${interior.id}" /> ${interior.material}
+            <input type="radio" name="interior" value="${interior.id}" /> ${interior.material}
         </li>`
     })
 
