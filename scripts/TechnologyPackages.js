@@ -11,7 +11,7 @@ const techPackages = getTechPackages()
 //     }
 // )
 
-export const technologyPackages = () => {
+export const TechnologyPackages = () => {
     let html = "<ul>"
 
     // Use .map() for converting objects to <li> elements
