@@ -1,4 +1,4 @@
-import { getInteriors } from "./database.js"
+import { getInteriors, setInteriors } from "./database.js"
 
 const interiors = getInteriors()
 
@@ -6,7 +6,7 @@ document.addEventListener(
     "change",
     (event) => {
         if (event.target.name === "interior") {
-           window.alert(`User chose interior material ${event.target.value}`)
+           setInteriors(parseInt(event.target.value))
         }
     }
 )
