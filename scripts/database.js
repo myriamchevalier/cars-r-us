@@ -138,7 +138,7 @@ export const addCustomCar = () => {
 
     database.customOrders.push(newOrder)
 
-    database.carBuilder = { }
+    database.carBuilder = {}
 
     document.dispatchEvent(new CustomEvent ("stateChanged"))
 }

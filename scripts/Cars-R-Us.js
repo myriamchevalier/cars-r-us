@@ -1,8 +1,17 @@
+import { addCustomCar } from "./database.js";
 import { InteriorMaterials } from "./Interiors.js";
 import { Orders } from "./Orders.js";
 import { PaintColorChoices } from "./PaintColors.js";
 import { TechnologyPackages } from "./TechnologyPackages.js";
 import { WheelsOptions } from "./WheelsOptions.js";
+
+document.addEventListener(
+    "click", (event) => {
+        if (event.target.id === "orderButton"){
+            addCustomCar()
+        }
+    }
+)
 
 export const CarsRUs = () => {
     return `
