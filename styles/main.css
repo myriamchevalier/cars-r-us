@@ -1,0 +1,28 @@
+@import "details.css";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+body {
+    color: black;
+    font-family:'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+}
+
+h1{
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#orderButton {
+    margin: 1rem;
+    font-size: 1.75rem;
+    font-weight: 900;
+    font-family:'Ubuntu', sans-serif;
+    background-color: goldenrod;
+}
+
+
