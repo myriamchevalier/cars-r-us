@@ -122,3 +122,18 @@ export const getTechPackages = () => {
 export const getWheels = () => {
     return database.wheels.map(wheel => ({...wheel}))
 }
+
+export const addCustomCar = () => {
+    const newOrder = {...database.carBuilder} //current state stored in carBuilder object (choices made by user but not yet saved)
+    const lastIndex = database.customOrders.length - 1  //finds last index of customOrders array
+    
+    newOrder.id = database.customOrders[lastIndex].id + 1
+
+    newOrder.timestamp = Date.now ()
+
+    database.customOrders.push(newOrder)
+
+    database.carBuilder = { }
+
+    document.dispatchEvent(new CustomEvent ("stateChanged"))
+}
