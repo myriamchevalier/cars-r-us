@@ -86,7 +86,8 @@ const database = {
             interiorId: 1,
             techPackageId: 4,
             wheelsId: 1,
-            basePrice: 5000
+            basePrice: 5000,
+            timestamp: Date.now()
         }
     ],
     carBuilder :{}
@@ -121,6 +122,10 @@ export const getTechPackages = () => {
 
 export const getWheels = () => {
     return database.wheels.map(wheel => ({...wheel}))
+}
+
+export const getOrders = () => {
+    return database.customOrders.map(customOrder =>({...customOrder}))
 }
 
 export const addCustomCar = () => {

@@ -1,4 +1,5 @@
 import { InteriorMaterials } from "./Interiors.js";
+import { Orders } from "./Orders.js";
 import { PaintColorChoices } from "./PaintColors.js";
 import { TechnologyPackages } from "./TechnologyPackages.js";
 import { WheelsOptions } from "./WheelsOptions.js";
@@ -31,6 +32,8 @@ export const CarsRUs = () => {
         <button id="orderButton">Build your dream car</button>
 
         <section class="orders">
+            <h2>Custom Cars Orders</h2>
+            ${ Orders() }
         </section>
     `
 }
