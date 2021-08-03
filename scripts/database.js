@@ -86,7 +86,6 @@ const database = {
             interiorId: 1,
             techPackageId: 4,
             wheelsId: 1,
-            basePrice: 5000,
             timestamp: Date.now()
         }
     ],
