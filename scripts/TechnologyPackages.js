@@ -17,7 +17,7 @@ export const TechnologyPackages = () => {
     // Use .map() for converting objects to <li> elements
     const listItems = techPackages.map(techPackage => {
         return `<li>
-            <input type="radio" name="technology" value="${techPackage.id}" /> ${techPackage.package}
+            <input type="radio" name="technology" value="${techPackage.id}" /> ${techPackage.package} (${techPackage.description})
         </li>`
     })
 
